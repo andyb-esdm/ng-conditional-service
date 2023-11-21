@@ -10,9 +10,9 @@ import { Project } from '../project.model';
 export class ProjectListItemComponent {
   @Input() project!: Project;
   selected = false;
-  name = '';
+  serviceRef = '';
   constructor(private listSelectionService: ListSelectionService) {
-    this.name = listSelectionService.name;
+    this.serviceRef = listSelectionService.name;
   }
 
 }
